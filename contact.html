@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Hridish</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: rgb(1, 1, 56);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(4, 4, 47);
+        }
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+        nav ul li a:hover {
+            color: rgb(162, 162, 239);
+            font-size: 1.02rem;
+        }
+        .contact-section {
+            margin: 100px auto;
+            max-width: 600px;
+            padding: 20px;
+            background-color: rgb(15, 11, 35);
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        }
+        .contact-section h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: blueviolet;
+        }
+        .contact-section form {
+            display: flex;
+            flex-direction: column;
+        }
+        .contact-section input, 
+        .contact-section textarea {
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 2px solid blueviolet;
+            border-radius: 4px;
+            background-color: rgb(1, 1, 56);
+            color: white;
+        }
+        .contact-section button {
+            padding: 12px;
+            background: blueviolet;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        .contact-section button:hover {
+            background-color: rgb(139, 0, 139);
+        }
+        footer {
+            background-color: rgb(15, 11, 35);
+            padding: 23px;
+            text-align: center;
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="left">Hridish's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="contact-section">
+        <h1>Contact Me</h1>
+        <form action="mailto:hridish.goswami2005@gmail.com" method="post" enctype="text/plain">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <ul>
+            <li><b>Socials</b></li>
+            <li><a href="https://www.linkedin.com/in/hridish-goswami-1130332ba/">LinkedIn</a></li>
+            <li><a href="https://www.instagram.com/notyet_.hrdxh/">Instagram</a></li>
+            <li><a href="https://github.com/HrdxH">Github </a></li>
+        </ul>
+        Copyright&#169;www.hridishsportfolio.com | All rights reserved
+    </footer>
+
+</body>
+</html>
