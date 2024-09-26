@@ -229,9 +229,68 @@
                 height: 1.2px;
                 margin: 60px 84px;
             }
+            #loader{
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    transition: all ease 0.7s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#loader h1{
+    font-size: 4vw;
+    color: transparent;
+    background: linear-gradient(to right, rgb(168, 5, 168),rgb(72, 3, 89));
+    -webkit-background-clip: text;
+    position: absolute;
+    opacity: 0;
+    animation-name: load;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-timing-function: linear;
+}
+#loader h1:nth-child(2){
+    animation-delay: 2s;
+}
+#loader h1:nth-child(3){
+    animation-delay: 3s;
+}
+
+@keyframes load {
+    0%{
+        opacity: 0;
+    }
+    10%{
+        opacity: 1;
+    }
+    90%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+@media (max-width:600px) {
+    #loader h1{
+        font-size: 9vw;
+      
+    }
+}
+
         </style>
     </head>
     <body>
+        <div id="loader">
+            <h1>WEB DEVELOPER</h1>
+            <h1>AI ENTHUSIAST</h1>
+            <h1>ASPIRING SDE</h1>
+        </div>
         <header>
             <nav>
                 <div class="left">Hridish's Portfolio</div>
@@ -313,5 +372,12 @@
                 typeSpeed: 50,
             });
         </script>
+        <script>function loaderAnimation() {
+            var loader = document.querySelector("#loader")
+            setTimeout(function () {
+                loader.style.top = "-100%"
+            }, 4200)
+        }
+        loaderAnimation()</script>
         </body>
-    </html>
+    </html> 
